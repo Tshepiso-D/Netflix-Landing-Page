@@ -50,6 +50,7 @@ h1{
     width:100vw;
 }
 .banner-container{
+    justify-content:center;
     height:80vh;
     color:white;
     display:flex;
@@ -77,4 +78,8 @@ h1{
 .footer ul li:hover{
     text-decoration:underline;
     cursor:pointer;
+}
+.footer_links{
+    list-style-type:none;
+    columns:4;
 }
