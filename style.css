@@ -3,9 +3,9 @@ body{
 }
 .overlay{
     z-index:-1;
-    height:100%;
-    width:100%;
-    background:black;
+    height:100vh;
+    width:100vw;
+    background:rgb(0, 0, 0);
     opacity:60%;
     position:absolute;
     top:0;
@@ -48,6 +48,10 @@ h1{
     position:relative;
     z-index:1;
     width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
 }
 .banner-container{
     justify-content:center;
@@ -62,11 +66,32 @@ h1{
     align-items:center;
     flex-direction:column;
 }
+.button{
+    background-color:red;
+    color:white;
+    padding:20px;
+    border-radius:3px;
+    border:none;
+}
+.button:hover{
+    background-color:darkred;
+    cursor:pointer;
+}
+.email{
+    padding:20px;
+    border-radius:3px;
+    border:1px rgb(218,214,214) solid;
+    opacity:50%;
+}
 .card-tilte{
     font-size:3.125rem;
     margin-bottom:0.5rem;
     line-height:1.1;
     font-weight:600;
+}
+.email:hover{
+    background-color: rgb(218, 214, 214);
+    cursor:pointer;
 }
 .card-subtilte{
     font-size:1.625rem;
@@ -82,4 +107,13 @@ h1{
 .footer_links{
     list-style-type:none;
     columns:4;
+}
+.footer_line{
+    color:#757575;
+    padding-left:40px;
+}
+
+.info-container{
+    margin: 0 20px 200px 0;
+    
 }
