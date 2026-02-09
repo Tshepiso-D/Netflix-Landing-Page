@@ -1,12 +1,23 @@
+
+
 body{
     background-color:black;
+    font-family:sans-serif;
+    font-size:75%;
+}
+*{
+    font-family:unset;
+}
+.default-ltr-iqcdef-cache-17hp4kx{
+    width:150px;
+    fill:rgb(229, 9, 20);
 }
 .overlay{
     z-index:-1;
     height:100vh;
     width:100vw;
     background:rgb(0, 0, 0);
-    opacity:60%;
+    opacity:70%;
     position:absolute;
     top:0;
 }
@@ -19,33 +30,41 @@ body{
     align-items:center;
     justify-content:space-between;
     height:50px;
-    width:90vw;
+    width:1030px;
+    margin:24px;
     
 }
 
 h1{
     font-size:3.2rem;
 }
-.navbar>img{
-    height: 45px;
+.Logo{
+    width:150px;
 }
-.navbar>a{
+.signin{
+    display:flex;
     color:white;
-    background-color:red;
+    font-weight:700;
+    font-size:13px;
+    background-color:rgb(229, 9, 20);
     border-radius:3px;
     padding:7px 17px;
+    height:20px;
+    width:50px;
+    justify-content:center;
+    align-items:center;
+
+}
+.signin a{
     text-decoration:none;
 
 }
-
 .banner-wrap{
-    background-image: url(the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg);
-    background-attachment: fixed;
+    background-image: url(/assets/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
     height:100vh;
-    border-bottom: 10px solid #222222;
     position:relative;
     z-index:1;
     width:100vw;
@@ -62,27 +81,65 @@ h1{
     flex-direction:column;
     align-items:center;
 }
+.banner-container h1{
+    font-weight:900;
+    font-family:sans-serif;
+    font-size:3.5rem;
+    margin-bottom: 30px;
+}
+.banner-container p{
+    margin-bottom:20px;
+    font-weight:900;
+    font-size:15px;
+}
 .get_started_form{
     display:flex;
     align-items:center;
+    justify-content:center;
     flex-direction:column;
 }
+.get_started_form p{
+    font-weight:450;
+    font-size:18px;
+}
+#Email_button{
+    display:flex;
+    flex-direction:row;
+    margin-top:1px;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+}
 .button{
-    background-color:red;
+    background-color:rgb(229, 9, 20);
     color:white;
-    padding:20px;
+    padding:17px;
     border-radius:3px;
     border:none;
+    width:15vw;
+    font-size:20px;
+    font-weight:700;
+    margin-left:8px;
 }
 .button:hover{
     background-color:darkred;
     cursor:pointer;
 }
 .email{
+    background-color:black;
     padding:20px;
     border-radius:3px;
-    border:1px rgb(218,214,214) solid;
+    border:1px rgb(255, 255, 255) solid;
     opacity:50%;
+    width:27vw;
+    margin-left:-140px;
+}
+.emaillabel{
+    position:relative;
+    color: rgb(255, 255, 255);
+    font-size:18px;
+    font-weight:450px;
+    opacity:100%;
 }
 .card-tilte{
     font-size:3.125rem;
@@ -97,12 +154,113 @@ h1{
 .card-subtilte{
     font-size:1.625rem;
     font-weight:400;
+    align-items:center;
 }
+
+.curve-container{
+    width:100vw;
+    height:6.5rem;
+    box-sizing:border-box;
+    overflow-x:hidden;
+    position:relative;
+    z-index:1;
+}
+
+.curve{
+    box-sizing:border-box;
+    position:absolute;
+    height:100%;
+    border: 0.25rem solid #e00d1f;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    background-clip: padding-box;
+    width:100vw;
+}
+
+.info-container{
+    font-family: sans-serif;
+    padding:2px;
+    display:flex;
+    flex-direction:row;
+    height:auto;
+    align-items:center;
+    margin-left:50px;
+    margin-right:50px;
+}
+.info-container p{
+    font-family:sans-serif;
+    font-weight:500;
+    font-size:15px;
+    
+}
+
+.tv{
+    margin-left:10vw;
+    height:400px;
+}
+
+.tv img{
+    position:relative;
+    height:400px;
+    z-index:+1;
+}
+.tv video{
+    position:relative;
+    bottom:320px;
+    height:220px;
+    left:70px;
+}
+
+.trending_movies{
+    margin: 5px 50px;
+    display:flex;
+    flex-direction:row;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    width:cal(100vw-100px);
+    height:300px;
+}
+
+.trending_movies_title{
+    font-size:30px;
+    margin:10px;
+    margin-left:50px;
+}
+
+.trending_movies img{
+    border-radius:10px;
+    height:230px;
+    margin: 25px;
+}
+.trending_movies_index{
+    font-size:90px;
+    position:relative;
+    right:0px;
+    bottom:145px;
+    color:black;
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-weight:900;
+    -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
+    height:1em;
+}
+
+.movie{
+    margin:0px;
+}
+.footer{
+    margin:50px;
+}
+
 .footer ul li{
     color:#757575;
+    font-size:13px;
+    margin:5px;
+    font-weight:550;
+    text-decoration:underline;
 }
 .footer ul li:hover{
-    text-decoration:underline;
     cursor:pointer;
 }
 .footer_links{
@@ -112,9 +270,7 @@ h1{
 .footer_line{
     color:#757575;
     padding-left:40px;
+    font-size:15px;
+    font-weight:550;
 }
 
-.info-container{
-    margin: 0 20px 200px 0;
-    
-}
