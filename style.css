@@ -1,5 +1,5 @@
 
-
+/*Styling the body*/
 body{
     background-color:black;
     font-family:sans-serif;
@@ -14,6 +14,7 @@ body{
     width:150px;
     fill:rgb(229, 9, 20);
 }
+/*Styling the overlay to give a darker look to the background*/
 .overlay{
     z-index:-1;
     height:100vh;
@@ -27,6 +28,8 @@ body{
     margin:0;
     color:white;
 }
+
+/*Styling the nav bar*/
 .navbar{
     display:flex;
     align-items:center;
@@ -55,12 +58,14 @@ h1{
     width:50px;
     justify-content:center;
     align-items:center;
+    cursor:pointer;
 
 }
 .signin a{
     text-decoration:none;
 
 }
+/*Styling the hero section*/
 .banner-wrap{
     background-image: url(/assets/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg);
     background-size:cover;
@@ -94,6 +99,8 @@ h1{
     font-weight:900;
     font-size:15px;
 }
+
+/*Styling the get started form*/
 .get_started_form{
     display:flex;
     align-items:center;
@@ -114,6 +121,7 @@ h1{
     height:70px;
 }
 .button{
+    display:flex;
     background-color:rgb(229, 9, 20);
     color:white;
     padding:17px;
@@ -125,6 +133,9 @@ h1{
     margin-left:8px;
     height:57px;
     text-align:center;
+    align-items:center;
+    justify-content:center;
+
 }
 .button:hover{
     background-color:darkred;
@@ -163,6 +174,7 @@ h1{
     align-items:center;
 }
 
+/*Styling the curve with the divs set up in the html document*/
 .curve-container{
     width:100vw;
     height:4rem;
@@ -187,6 +199,7 @@ h1{
     width:100vw;
 }
 
+/*Styling the video section*/
 .info-container{
     font-family: sans-serif;
     padding:2px;
@@ -220,7 +233,7 @@ h1{
     height:220px;
     left:70px;
 }
-
+/*Styling the trending movies section*/
 .trending_movies{
     margin: 5px 13vw;
     display:flex;
@@ -257,12 +270,29 @@ h1{
 
 .movie{
     margin:0px;
+    cursor:pointer;
 }
 
+.button2{
+    position:relative;
+    left:1138px;
+    bottom:220px;
+    height:120px;
+    width:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    color:white;
+    background-color:rgba(255, 255, 255, 0.1);
+    border:none;
+
+}
+/*Styling the more reasons section*/
 .more_reasons_title{
     font-size:30px;
     margin-left:13vw;
-    margin-top:50px;
+    margin-top:-70px;
 }
 
 .more_reasons_box{
@@ -317,7 +347,7 @@ h1{
     left:123px;
     top:15px;
 }
-
+/*Styling the FAQ section*/
 .FAQ_section{
     display:flex;
     flex-direction:column;
@@ -351,10 +381,12 @@ h1{
     width: 70vw;
     padding:10px;
     margin-bottom:0.2px;
+    flex-shrink:0;
 }
 
 .FAQ_item:hover{
     background-color:rgb(56, 56, 56);
+    cursor:pointer;
 }
 
 .FAQ_item h2{
@@ -363,7 +395,11 @@ h1{
 }
 
 .FAQ_item_dropdown{
+    position:relative;
+    top:88px;
+    right:978px;
     width:70vw;
+    margin-bottom:86px;
     height:auto;
     font-size:25px;
     font-weight:500;
@@ -372,7 +408,7 @@ h1{
     align-items:center;
 }
 
-
+/*Styling the footer section*/
 .footer{
     margin-right:10vw;
     margin-left:10vw;
@@ -441,6 +477,8 @@ h1{
     color:rgb(68, 142, 244);
     text-decoration:underline;
 }
+
+/*A media query but our instructor said these are not necessary so I stopped here*/
 @media screen and (max-width:805px){
     .info-container{
         display:none;
