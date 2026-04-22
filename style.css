@@ -43,9 +43,7 @@ body{
 h1{
     font-size:3.2rem;
 }
-.Logo{
-    width:150px;
-}
+
 .signin{
     display:flex;
     color:white;
@@ -81,10 +79,10 @@ h1{
     
 }
 .banner-container{
+    display:flex;
     justify-content:center;
     height:80vh;
     color:white;
-    display:flex;
     flex-direction:column;
     align-items:center;
 }
@@ -482,5 +480,94 @@ h1{
 @media screen and (max-width:805px){
     .info-container{
         display:none;
+    }
+    .button2{
+        left:330px;
+    }
+
+    .default-ltr-iqcdef-cache-17hp4kx{
+        width:80px;
+    }
+    .signin{
+        width:50px;
+        padding: 5px;
+    }
+    .banner-container{
+        height: 60vh;
+    }
+    .banner-container h1{
+        margin:0px 10px;
+        font-size:1.8rem;
+    }
+    .get_started_form p{
+        margin:10px 35px;
+        font-size:1rem;
+    }
+
+    .banner-container p{
+        margin:10px 35px;
+        font-size:1rem;
+        font-weight:400;
+    }
+    
+    .more_reasons_box{
+        display:flex;
+        flex-direction:column;
+        height:fit-content;
+    }
+    .box{
+        width:100%;
+        margin:10px 0px;
+    }
+    #Email_button{
+        margin: 10px 0px;
+        gap:10px;
+        display:flex;
+        flex-direction:column;
+    }
+    .emaillabel{
+        top:50px;
+        right:70px;
+    }
+    .email{
+        width:70%;
+        margin:0;
+    }
+    .button{
+        width:60%;
+    }
+    .banner-wrap{
+        height: 60vh;
+    }
+    .overlay{
+        height:60vh;
+    }
+    .footer{
+        margin:40px 0px;
+    }
+    .footer_links{
+        display:flex;
+        flex-direction:column;
+        gap:3px;
+    }
+    .icon1{
+        left:180px;
+        top:60px;
+    }
+    .icon2{
+        left:180px;
+        top:50px;
+    }
+    .icon3{
+        left:180px;
+        top:60px;
+    }
+    .icon4{
+        left:180px;
+        top:60px;
+    }
+    .FAQ_item_dropdown{
+        top:88px;
+        right:292px;
     }
 }
